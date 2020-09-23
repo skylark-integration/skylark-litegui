@@ -1,0 +1,140 @@
+/********************/
+.liteslider {
+	display: inline-block;
+	position: relative; 
+	width: calc(100% - 2em);
+	height: 1.2em;
+	cursor: pointer;
+}
+
+.slider-container {
+    margin-left: 5px;
+    margin-top: 1px;
+    /*margin-right: 5px;*/
+}
+
+.colorpicker-window {
+	position: absolute;
+	top: 50px;
+	left: 10px;
+	background-color: #333;
+	padding: 2px;
+	font-size: 0.8em;
+	color: #aaa;
+}
+
+.colorpicker-window input {
+	border: 0;
+}
+
+.searchbox {
+    padding: 2px;
+    opacity: 0.5;
+    transition: all 0.5s;
+    width: 100%;
+}
+
+.searchbox input {
+    padding: 2px 4px;
+    outline: 0;
+    width: 100%;
+}
+
+.searchbox input:focus
+{
+    outline: 0;
+}
+
+.searchbox:hover {
+    opacity: 1;
+}
+
+
+.litecheckbox {
+
+	width: 1em;
+	height: 1em;
+	display: inline-block;
+	vertical-align: top;
+	background-color: #1f1f1f;
+	border: 0;
+	border-radius: 2px;
+	margin: 0 4px;
+	margin-top: 2px;
+	text-align: center;
+
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+
+	cursor: pointer;
+}
+
+.litecheckbox .on {
+	background-color: #5AF;
+	color: black;
+}
+
+.litecheckbox .flag {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 2px solid black;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	cursor: pointer;
+}
+
+.liteconsole {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	border: 1px solid #222;
+}
+
+.liteconsole .log {
+	width: 100%;
+	height: calc( 100% - 26px );
+	overflow: auto;
+	color: #AAA;
+	padding: 4px;
+}
+
+.liteconsole .log .msg {
+    white-space: pre-wrap;
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.liteconsole .log .msg.me {
+	color: white;
+}
+
+.liteconsole .log .msg.msglog { color: #AAA; }
+.liteconsole .log .msg.msgwarn { color: #FFA; }
+.liteconsole .log .msg.msgerror { color: #FAA; }
+.liteconsole .log .msg.good { color: #AFA; }
+
+.liteconsole .foot {
+	width: 100%;
+	height: 24px;
+	color: #111;
+}
+
+.liteconsole .foot input {
+	width: 100%;
+	height: 24px;
+	color: white;
+	background-color: black;
+	border: 0;
+	border-top: 1px solid #444;
+	margin: 0;
+	padding-left: 10px;
+	resize: none;
+}
+
+.liteconsole .foot input:focus{
+    outline: none;
+}
