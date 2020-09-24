@@ -1,0 +1,60 @@
+{
+  "name": "skylark-litegui",
+  "description": "A version of litegui.js  that ported to running on skylarkjs.",
+  "version": "0.9.0",
+  "keywords": [
+    "skylark",
+    "framework",
+    "skylark-litegui"
+  ],
+  "homepage": "https://github.com/skylark-integration/skylark-litegui/",
+  "author": "Hudaokeji, Inc.",
+  "scripts": {
+    "build": "slib build ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skylark-integration/skylark-litegui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skylark-integration/skylark-litegui/issues"
+  },
+  "files": [
+    "demos/",
+    "dist/",
+    "src/",
+    "skins/"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "skylark-langx-arrays": "git+https://github.com/skylark-langx/skylark-langx-arrays.git#master",
+    "skylark-langx-funcs": "git+https://github.com/skylark-langx/skylark-langx-funcs.git#master",
+    "skylark-langx-ns": "git+https://github.com/skylark-langx/skylark-langx-ns.git#master",
+    "skylark-langx-objects": "git+https://github.com/skylark-langx/skylark-langx-objects.git#master",
+    "skylark-langx-types": "git+https://github.com/skylark-langx/skylark-langx-types.git#master"
+  },
+  "engines": {
+    "node": ">=0.10.1"
+  },
+  "skylarkjs": {
+    "directories": {
+      "dependencies": "./node_modules"
+    },
+    "secondaries": {},
+    "build": {
+      "prepare": {
+        "texttojs": [
+          "html",
+          "json",
+          "css"
+        ],
+        "jsxtojs": false,
+        "es6toamd": false,
+        "cjstoamd": false
+      },
+      "bundles": {
+        "all": true
+      }
+    }
+  }
+}
